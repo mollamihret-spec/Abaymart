@@ -122,7 +122,7 @@ function Auth() {
           > { loading.signUp ? <PulseLoader color='#2563EB' size={15}></PulseLoader> : "Create your Amazon Account" }
             
           </button>
-          <p>This is Abaymart website registration and signUp page.You must create an account if you don not have one.then you can sign in anytime.You are signing in to the Abaymart e-commerce website.</p>
+          <p>This is Abaymart website registration and signUp page.You must create an account if you don not have one.Then you can sign in anytime.You are signing in to the Abaymart e-commerce website.</p>
         </form>
 
         <p style={{paddingTop: "5px",color: "red"}} >{error}</p>
