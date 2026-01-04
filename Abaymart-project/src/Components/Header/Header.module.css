@@ -16,18 +16,19 @@
     color: white;
     height: 70px;
 }
+
+
 .logo_container{
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 250px;
+    max-width: 200px;
 }
 .logo_container img{
-    width: 80%;
-    padding-top: 5px;
-    margin-left: 20px;
-    vertical-align: middle;
-    /* height: auto; double check here */
+    width: 3cm;
+    padding-top: 0px;
+    margin-left: 0px;
+       height: 55px;
 }
 
 .delivery{
@@ -101,7 +102,7 @@
     color: white;
 }
 .language img{
-width: 40%;
+width: 50%;
 }
 
 .cart{

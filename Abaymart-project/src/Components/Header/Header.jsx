@@ -53,7 +53,7 @@ function Header() {
           <div className={classes.order_container}>
             <Link to="" className={classes.language}>
               <img
-                src="https://image.shutterstock.com/image-illustration/ethiopia-flag-print-wallpaper-purposes-260nw-1460726192.jpg"
+                src="https://image.shutterstock.com/image-vector/flag-ethiopia-icon-standard-color-260nw-2326036261.jpg"
                 alt="language"
               />
               <select>
@@ -69,7 +69,7 @@ function Header() {
     </div>
   </Link>
 ) : (
-  <Link> 
+  <Link to="/"> 
   <div>
     <p>Hello, {user.email.split("@")[0]}</p>
     <span onClick={() => {auth.signOut()}}>Sign Out</span>

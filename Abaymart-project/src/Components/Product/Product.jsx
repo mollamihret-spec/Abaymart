@@ -8,7 +8,8 @@ function Product() {
     const[isLoading,setisLoading]= useState(true)
 
     useEffect(() => {
-    axios.get('https://fakestoreapi.com/products')
+    
+    axios.get('http://localhost:4001/products')
     .then((res)=>{
      setProducts(res.data)
      setisLoading(false)

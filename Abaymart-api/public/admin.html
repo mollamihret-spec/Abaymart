@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Product Submission</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.png" type="image/png">
+</head>
+<body>
+
+  <!-- ====== Admin Login Form ====== -->
+  <h1>Admin Login</h1>
+  <form id="loginForm">
+    <label>Email</label><br>
+    <input type="email" name="email" required /><br><br>
+
+    <label>Password</label><br>
+    <input type="password" name="password" required /><br><br>
+
+    <input type="submit" value="Sign In" />
+  </form>
+
+  <hr>
+
+  <!-- ====== Product Submission Form ====== -->
+  <h1>Product Submitting Form</h1>
+  <form id="productForm" style="display:none;">
+
+     <div>
+      <h2>Product Info</h2>
+      
+      <label for="title">Product Title</label><br>
+      <input type="text" name="title" /><br><br>
+
+      <label for="category">Category</label><br>
+      <input type="text" name="category" /><br><br>
+
+      <label for="image">Image URL</label><br>
+      <input type="text" name="image" /><br><br>
+    </div>
+
+    <div>
+      <h2>Description</h2>
+      <label for="description">Description</label><br>
+      <textarea name="description" cols="30" rows="5"></textarea><br><br>
+    </div>
+
+    <div>
+      <h2>Price & Rating</h2>
+      <label for="price">Price</label><br>
+      <input type="text" name="price" /><br><br>
+
+      <label for="rate">Rating (rate)</label><br>
+      <input type="text" name="rate" /><br><br>
+
+      <label for="count">Rating (count)</label><br>
+      <input type="text" name="count" /><br><br>
+  
+    <input type="submit" value="Add Product" />
+  </form>
+  <hr>
+
+<!-- ====== Product List ====== -->
+<h1>Product List</h1>
+<div id="productList">
+  <!-- Products will be dynamically inserted here -->
+</div>
+
+
+ 
+<script type="module" src="./script.js"></script>
+</body>
+</html>

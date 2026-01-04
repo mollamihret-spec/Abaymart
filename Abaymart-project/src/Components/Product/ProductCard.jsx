@@ -34,8 +34,8 @@ function ProductCard({ product,flex,renderDesc,renderAdd }) {
         <h3>{title}</h3>
         {renderDesc && <div style={{maxWidth: "750px"}}>{description}</div> }
         <div className={classes.rating}>
-          <Rating sx={{color: "var(--primary-color)"}}  value={rating?.rate || 0} precision={0.5} readOnly />
-          <small>{rating?.count || 0} </small>
+          <Rating sx={{color: "var(--primary-color)"}}  value={rating?.rate || " "} precision={0.5} readOnly />
+          <small>{rating?.count || " "} </small>
         </div>
         <div>
               <CurrencyFormat amount={price} />
