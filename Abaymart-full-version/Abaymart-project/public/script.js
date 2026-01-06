@@ -102,6 +102,7 @@ async function fetchProducts() {
         const id = btn.dataset.id;
         const product = products.find(p => p.id == id);
         populateFormForUpdate(product);
+        window.scrollTo({ top: 0, behavior: "smooth" });
       });
     });
 
@@ -169,7 +170,8 @@ productForm.addEventListener("submit", async (e) => {
     alert(updateId ? "Product updated!" : "Product added!");
     productForm.reset();
     delete productForm.dataset.updateId;
-    fetchProducts();
+    await fetchProducts();
+     window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
   } catch (err) {
     console.error(err);
     alert("Failed to submit product");

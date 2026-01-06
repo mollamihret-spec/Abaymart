@@ -35,7 +35,7 @@ function Payment() {
     try {
       // Create Stripe Payment Intent (in cents)
       const stripeResponse = await axios.post(
-        `http://localhost:5000/payment/create?total=${Math.round(totalAmount * 100)}`
+        `http://localhost:4001/payment/create?total=${Math.round(totalAmount * 100)}`
       );
       const clientSecret = stripeResponse.data.clientSecret;
 
