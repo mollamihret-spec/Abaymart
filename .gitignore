@@ -1,0 +1,56 @@
+# Dependencies
+
+node_modules
+**/node_modules
+
+# Logs
+
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+serviceAccountKey.json
+
+
+
+# Environment files
+
+.env
+.env.*
+*.local
+
+# Build outputs
+
+dist
+dist-ssr
+build
+coverage
+
+
+# Firebase
+
+.firebase
+firebase-debug.log
+firebase-debug.*.log
+
+
+# Editor / OS files
+
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+Thumbs.db
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+
+# Misc
+.cache
+.tmp
