@@ -93,7 +93,7 @@ textarea:hover {
 
 
 input[type="submit"] {
-  background: #6c63ff;
+  background: #1ECAD3;
   color: #fff;
   border: none;
   padding: 15px 25px;
@@ -114,7 +114,7 @@ input[type="submit"]:hover {
 #productList {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 40px;
   justify-content: center;
 }
 
@@ -151,11 +151,11 @@ input[type="submit"]:hover {
 }
 
 .product-item button {
-  background: #6c63ff;
+  background: #1ECAD3;
   color: #fff;
   border: none;
   padding: 8px 12px;
-  margin-right: 5px;
+  margin-right: 54px;
   border-radius: 8px;
   cursor: pointer;
   font-size: 13px;

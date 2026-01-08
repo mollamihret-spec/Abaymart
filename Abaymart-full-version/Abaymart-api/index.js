@@ -1,5 +1,5 @@
 // ===== IMPORTS =====
-const mysql = require("mysql");
+const mysql = require("mysql2");
 const express = require("express");
 const cors = require("cors");
 const bodyParser = require("body-parser");
@@ -292,7 +292,7 @@ app.get("/orders/user/:userId", (req, res) => {
 });
 
 
-const PORT = process.env.PORT || 4001;
+const PORT = process.env.DB_PORT || 4001;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
